@@ -1,6 +1,6 @@
 <?php  if(!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<?php $desa_title = trim(ucwords($this->setting->sebutan_desa) . ' ' . $desa['nama_desa']); ?>
+<title><?php echo $this->setting->website_title . ' ' . ucwords($this->setting->sebutan_desa) . (($desa['nama_desa']) ? ' ' . $desa['nama_desa'] : '') . get_dynamic_title_page_from_path();?></title>
 <meta content="utf-8" http-equiv="encoding">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name='viewport' content='width=device-width, initial-scale=1' />
